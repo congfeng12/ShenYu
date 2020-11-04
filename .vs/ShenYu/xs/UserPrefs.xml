@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{39C27A90-49FF-AD51-4497-32BCCB06CB7B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sprites/Login.cs">
+    <Files>
+      <File FileName="Assets/Sprites/Login.cs" Line="19" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShenYu" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Sprites" expanded="True">
+                <Node name="Login.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="51fc72fd-e845-48ef-a768-825e50837e5b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

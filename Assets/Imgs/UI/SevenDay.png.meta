@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: a5fc8d9a084614e74be93399db8c5672
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9058490214024371647
+    second: SevenDay_0
+  - first:
+      213: -180775670761686802
+    second: SevenDay_1
+  - first:
+      213: -6488887297345831019
+    second: SevenDay_2
+  - first:
+      213: 9122825642413289613
+    second: SevenDay_3
+  - first:
+      213: 818012556971672351
+    second: SevenDay_4
+  - first:
+      213: 1915628370343820724
+    second: SevenDay_5
+  - first:
+      213: -7321790662120333327
+    second: SevenDay_6
+  - first:
+      213: -9207414018188930917
+    second: SevenDay_7
+  - first:
+      213: -61052622901463205
+    second: SevenDay_8
+  - first:
+      213: -6755178499511156584
+    second: SevenDay_9
+  - first:
+      213: -7935689388215526197
+    second: SevenDay_10
+  - first:
+      213: -102838925418948211
+    second: SevenDay_11
+  - first:
+      213: 4005371904655079099
+    second: SevenDay_12
+  - first:
+      213: -7250788335440151031
+    second: SevenDay_13
+  - first:
+      213: 3720713207096201281
+    second: SevenDay_14
+  - first:
+      213: -486337281407852029
+    second: SevenDay_15
+  - first:
+      213: 4057182090876386588
+    second: SevenDay_16
+  - first:
+      213: -5447167835655365624
+    second: SevenDay_17
+  - first:
+      213: 7173638869921813996
+    second: SevenDay_18
+  - first:
+      213: -8170335112092157453
+    second: SevenDay_19
+  - first:
+      213: 157602892010466639
+    second: SevenDay_20
+  - first:
+      213: 2552796231544471400
+    second: SevenDay_21
+  - first:
+      213: -2957031888438011519
+    second: SevenDay_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SevenDay_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 467
+        width: 112
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd56401bd836bd70800000000000000
+      internalID: 9058490214024371647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 423
+        width: 49
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee877383c71cd7df0800000000000000
+      internalID: -180775670761686802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 423
+        width: 46
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f3826f167d2f5a0800000000000000
+      internalID: -6488887297345831019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_3
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 290
+        width: 40
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d807ed34699ca9e70800000000000000
+      internalID: 9122825642413289613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 133
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f130b18261a2a5b00800000000000000
+      internalID: 818012556971672351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 189
+        width: 125
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdf0087adda59a10800000000000000
+      internalID: 1915628370343820724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_6
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 400
+        width: 37
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff9b807f26c36a90800000000000000
+      internalID: -7321790662120333327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 400
+        width: 37
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9095e1cbb1b83080800000000000000
+      internalID: -9207414018188930917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_8
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 290
+        width: 37
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b573a5386f8172ff0800000000000000
+      internalID: -61052622901463205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 353
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8900846f1f8c042a0800000000000000
+      internalID: -6755178499511156584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 135
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc9397eb84ced190800000000000000
+      internalID: -7935689388215526197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 290
+        width: 102
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89125dca84a29ef0800000000000000
+      internalID: -102838925418948211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 143
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6bb42a680f59730800000000000000
+      internalID: 4005371904655079099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 191
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e3b8cdc66006b90800000000000000
+      internalID: -7250788335440151031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_14
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 191
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140d21cd2f0a2a330800000000000000
+      internalID: 3720713207096201281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_15
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 148
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302e7acb1de2049f0800000000000000
+      internalID: -486337281407852029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_16
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 148
+        width: 153
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d73c3ad910e4830800000000000000
+      internalID: 4057182090876386588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_17
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 148
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c14dbb6b5c764b0800000000000000
+      internalID: -5447167835655365624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 304
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5df9c6b82ed8360800000000000000
+      internalID: 7173638869921813996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 441
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f978dbf0832d9e80800000000000000
+      internalID: -8170335112092157453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_20
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 55
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dabd9cefaef2200800000000000000
+      internalID: 157602892010466639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_21
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ff925b5aa5d6320800000000000000
+      internalID: 2552796231544471400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SevenDay_22
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189562c1a2386f6d0800000000000000
+      internalID: -2957031888438011519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
