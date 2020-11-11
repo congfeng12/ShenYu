@@ -34,4 +34,12 @@ public class User : ScriptableObject
     public string signTime;
     //妖魂
     public Item equip;
+    //玄云决使用次数限制（100008）
+    public int xy_Limit_Num = 6;
+    //玄云决使用次数（100008）
+    public int xy_Num;
+    //青云密典使用次数限制（100009）
+    public int qy_Limit_Num = 6;
+    //青云密典使用次数（100009）
+    public int qy_Num;
 }

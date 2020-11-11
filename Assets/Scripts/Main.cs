@@ -21,7 +21,7 @@ public class Main : MonoBehaviour
     //倒计时累计
     public float currentTime = 0.0f;
     //倒计时总时长
-    public float waitTime = 0.0f;
+    public float waitTime = 60.0f;
     //
     // Start is called before the first frame update
     void Start()
@@ -46,6 +46,7 @@ public class Main : MonoBehaviour
         day = System.DateTime.Now.Day;
         //控制台打印
         Debug.Log(""+ string.Format("{0:D4}/{1:D2}/{2:D2}", year, month, day));
+        //签到奖励操作
     }
     //挂机修炼
     public void Practice() {
