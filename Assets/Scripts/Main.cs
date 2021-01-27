@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +14,16 @@ public class Main : MonoBehaviour
     private int day;
     //每日奖励页面
     public GameObject qindao;
+    //签到页面显示日期
+    public Text qiandaoText;
     //用户信息
     public User player;
+    //修炼界面信息
+    public Text expInfo;
+    //修炼进度
+    public Text practiceExp;
+    //用户信息页面
+    public UserInfo userInfo;
     //--------修炼技能刷新属性-----------
     //进度条图
     public Image cooldown;
@@ -28,28 +37,59 @@ public class Main : MonoBehaviour
     {
         //初始化用户信息
         waitTime = player.time;
+        //页面信息更新
+        flashExpPage();
+        flashPracticeExp();
         //计算签到奖励
         CheckInDaily();
+        //离线修炼计算
+        userInfo.getLevelName();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //页面信息更新
+        flashExpPage();
+        flashPracticeExp();
         //挂机修炼
         Practice();
+        userInfo.getLevelName();
     }
+
     //计算每日签到
-    public void CheckInDaily() {
+    private void CheckInDaily()
+    {
         //获取当前日期
         year = System.DateTime.Now.Year;
         month = System.DateTime.Now.Month;
         day = System.DateTime.Now.Day;
-        //控制台打印
-        Debug.Log(""+ string.Format("{0:D4}/{1:D2}/{2:D2}", year, month, day));
         //签到奖励操作
+        if (!(year + "-" + month + "-" + day).Equals(player.signTime))
+        {
+            //显示签到奖励获取页面
+            qindao.SetActive(true);
+            qiandaoText.text = year + "年" + month + "月" + day + "日";
+            //获取奖励
+            //人物属性奖励获取
+            player.gold += 10000;
+            player.DIA += 1000;
+            //道具奖励获取
+
+            //更新角色签到奖励日期
+            player.signTime = year + "-" + month + "-" + day;
+        }
+        else
+        {
+            //如果已经领取奖励则直接隐藏每日奖励窗口
+            qindao.SetActive(false);
+        }
+
     }
+
     //挂机修炼
-    public void Practice() {
+    private void Practice()
+    {
         //检测修炼条满时判断
         if (currentTime < waitTime)
         {
@@ -57,13 +97,28 @@ public class Main : MonoBehaviour
             currentTime += Time.deltaTime;
             cooldown.fillAmount += 1.0f / waitTime * Time.deltaTime;
         }
-        else {
+        else
+        {
             if (currentTime >= waitTime)
             {
                 currentTime = 0.0f;
                 cooldown.fillAmount = 0.0f;
                 //执行增加道行的操作
+                player.exp = player.exp + player.practiceExp;
+
             }
         }
+    }
+
+    //刷新主页显示修炼速度
+    private void flashExpPage()
+    {
+        expInfo.text = player.practiceExp + "道行/" + player.time + "秒";
+    }
+
+    //刷新修炼道行
+    private void flashPracticeExp()
+    {
+        practiceExp.text = player.exp + "/" + Math.Pow(player.level, 2) * 2000 + "道行";
     }
 }

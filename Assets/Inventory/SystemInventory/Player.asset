@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   level: 1
-  aggressivity: 20
+  exp: 0
+  aggressivity: 200
   HP: 5000
-  defense: 10
-  crit: 0.5
-  sidestep: 0.1
-  DIA: 0
-  gold: 1000
+  defense: 20
+  crit: 10
+  sidestep: 2
+  DIA: 1000
+  gold: 10000
   skillPoints: 0
   time: 60
-  experience: 100
+  practiceExp: 500
+  signTime: 2021-1-27
+  equip: {fileID: 0}
+  xy_Limit_Num: 6
+  xy_Num: 0
+  qy_Limit_Num: 6
+  qy_Num: 0

@@ -2517,7 +2517,7 @@ GameObject:
   - component: {fileID: 100087021}
   - component: {fileID: 100087020}
   m_Layer: 5
-  m_Name: Num
+  m_Name: experience
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3444,7 +3444,7 @@ GameObject:
   - component: {fileID: 140678459}
   - component: {fileID: 140678458}
   m_Layer: 5
-  m_Name: Num
+  m_Name: sidestep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8903,7 +8903,7 @@ GameObject:
   - component: {fileID: 353452310}
   - component: {fileID: 353452309}
   m_Layer: 5
-  m_Name: Num
+  m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16081,7 +16081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9843137, g: 0.72156864, b: 0.32941177, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17258,7 +17258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &655539567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17273,10 +17273,10 @@ RectTransform:
   m_Father: {fileID: 1823157491}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 390, y: -60}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655539568
 MonoBehaviour:
@@ -18188,7 +18188,7 @@ GameObject:
   - component: {fileID: 699551262}
   - component: {fileID: 699551261}
   m_Layer: 5
-  m_Name: Num
+  m_Name: defense
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20425,7 +20425,7 @@ GameObject:
   - component: {fileID: 815617430}
   - component: {fileID: 815617429}
   m_Layer: 5
-  m_Name: Num
+  m_Name: crit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22267,7 +22267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9811321, g: 0.72011393, b: 0.32858673, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -22826,7 +22826,7 @@ GameObject:
   - component: {fileID: 920090241}
   - component: {fileID: 920090240}
   m_Layer: 5
-  m_Name: Num
+  m_Name: time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34934,7 +34934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9886\u53D6\u6BCF\u65E5\u5956\u52B1"
+  m_Text: "\u5173\u95ED\u7A97\u53E3"
 --- !u!222 &1380103582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35769,7 +35769,7 @@ GameObject:
   - component: {fileID: 1401729445}
   - component: {fileID: 1401729444}
   m_Layer: 5
-  m_Name: Num
+  m_Name: exp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38612,7 +38612,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   qindao: {fileID: 1357173581}
+  qiandaoText: {fileID: 14442023}
   player: {fileID: 11400000, guid: b5234e7964b28403bbf9a6b3b4fe85dd, type: 2}
+  expInfo: {fileID: 1646795693}
+  practiceExp: {fileID: 2037942928}
+  userInfo: {fileID: 1882294276}
   cooldown: {fileID: 1334999591}
   currentTime: 0
   waitTime: 0
@@ -44763,6 +44767,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1882294276}
+        m_MethodName: LevelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1782577821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46902,7 +46917,7 @@ GameObject:
   - component: {fileID: 1867779630}
   - component: {fileID: 1867779629}
   m_Layer: 5
-  m_Name: Num
+  m_Name: aggressivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47424,6 +47439,7 @@ GameObject:
   - component: {fileID: 1882294273}
   - component: {fileID: 1882294275}
   - component: {fileID: 1882294274}
+  - component: {fileID: 1882294276}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -47491,6 +47507,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882294272}
   m_CullTransparentMesh: 0
+--- !u!114 &1882294276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882294272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef5677ba9d7d4701bd0639ec00b3e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 353452309}
+  aggressivity: {fileID: 1867779629}
+  defense: {fileID: 699551261}
+  crit: {fileID: 815617429}
+  sidestep: {fileID: 140678458}
+  exp: {fileID: 1401729444}
+  time: {fileID: 920090240}
+  practiceExp: {fileID: 100087020}
+  mainUserLevel: {fileID: 906190495}
+  userPageUserLevel: {fileID: 609923127}
+  player: {fileID: 11400000, guid: b5234e7964b28403bbf9a6b3b4fe85dd, type: 2}
 --- !u!1 &1883673353
 GameObject:
   m_ObjectHideFlags: 0

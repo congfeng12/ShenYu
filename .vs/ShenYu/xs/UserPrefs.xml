@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{39C27A90-49FF-AD51-4497-32BCCB06CB7B}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Main.cs">
     <Files>
-      <File FileName="Assets/Scripts/Main.cs" Line="30" Column="32" />
-      <File FileName="Assets/InventoryScripts/User.cs" Line="12" Column="20" />
-      <File FileName="../New Unity Project/Assets/All Assets/Script/playerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Main.cs" Line="91" Column="28" />
+      <File FileName="Assets/Scripts/UserInfo.cs" Line="174" Column="10" />
+      <File FileName="Assets/InventoryScripts/User.cs" Line="46" Column="1" />
+      <File FileName="Assets/InventoryScripts/Inventory.cs" Line="12" Column="1" />
+      <File FileName="Assets/InventoryScripts/Item.cs" Line="10" Column="26" />
+      <File FileName="Assets/InventoryScripts/ItemAttribute.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b9bbdf76-ce35-4737-9a9a-a284583dbb12" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eb88a6fe-d223-4109-bde3-a3333561a0b9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
