@@ -21,7 +21,7 @@ public class Main : MonoBehaviour
     //修炼界面信息
     public Text expInfo;
     //修炼进度
-    public Text practiceExp;
+    public Text practiceExpText;
     //用户信息页面
     public UserInfo userInfo;
     //--------修炼技能刷新属性-----------
@@ -42,7 +42,7 @@ public class Main : MonoBehaviour
         flashPracticeExp();
         //计算签到奖励
         CheckInDaily();
-        //离线修炼计算
+        //更新角色中文等级
         userInfo.getLevelName();
     }
 
@@ -54,16 +54,26 @@ public class Main : MonoBehaviour
         flashPracticeExp();
         //挂机修炼
         Practice();
+        //更新角色中文等级
         userInfo.getLevelName();
     }
 
     //计算每日签到
     private void CheckInDaily()
     {
+        //计算挂机时间差
+        TimeSpan interval = DateTime.Now - Convert.ToDateTime(player.lasttime);
+        int unOlineTime = (int)((int)interval.TotalSeconds / player.time);
+        if (unOlineTime > 1) {
+            //增加离线挂机道行
+            player.exp += unOlineTime * player.practiceExp;
+        }
+        //更新最后修炼时间点
+        player.lasttime = DateTime.Now.ToString();
         //获取当前日期
-        year = System.DateTime.Now.Year;
-        month = System.DateTime.Now.Month;
-        day = System.DateTime.Now.Day;
+        year = DateTime.Now.Year;
+        month = DateTime.Now.Month;
+        day = DateTime.Now.Day;
         //签到奖励操作
         if (!(year + "-" + month + "-" + day).Equals(player.signTime))
         {
@@ -73,7 +83,7 @@ public class Main : MonoBehaviour
             //获取奖励
             //人物属性奖励获取
             player.gold += 10000;
-            player.DIA += 1000;
+            player.DIA += 500;
             //道具奖励获取
 
             //更新角色签到奖励日期
@@ -87,7 +97,7 @@ public class Main : MonoBehaviour
 
     }
 
-    //挂机修炼
+    //修炼
     private void Practice()
     {
         //检测修炼条满时判断
@@ -104,8 +114,9 @@ public class Main : MonoBehaviour
                 currentTime = 0.0f;
                 cooldown.fillAmount = 0.0f;
                 //执行增加道行的操作
-                player.exp = player.exp + player.practiceExp;
-
+                player.exp += player.practiceExp;
+                //更新最后修炼时间点
+                player.lasttime = DateTime.Now.ToString();
             }
         }
     }
@@ -119,6 +130,6 @@ public class Main : MonoBehaviour
     //刷新修炼道行
     private void flashPracticeExp()
     {
-        practiceExp.text = player.exp + "/" + Math.Pow(player.level, 2) * 2000 + "道行";
+        practiceExpText.text = player.exp + "/" + Math.Pow(player.level, 2) * 2000 + "道行";
     }
 }

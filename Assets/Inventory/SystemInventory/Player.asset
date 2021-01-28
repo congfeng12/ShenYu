@@ -17,16 +17,27 @@ MonoBehaviour:
   aggressivity: 200
   HP: 5000
   defense: 20
-  crit: 10
+  crit: 5
   sidestep: 2
-  DIA: 1000
-  gold: 10000
+  DIA: 0
+  gold: 0
   skillPoints: 0
   time: 60
   practiceExp: 500
-  signTime: 2021-1-27
+  lasttime: 1/28/2021 5:58:41 PM
+  signTime: 2021-1-28
   equip: {fileID: 0}
-  xy_Limit_Num: 6
+  xy_Limit_Num: 10
   xy_Num: 0
-  qy_Limit_Num: 6
+  qy_Limit_Num: 10
   qy_Num: 0
+  skill1_level: 0
+  skill1_data: 0
+  skill2_level: 0
+  skill2_data: 0
+  skill3_level: 0
+  skill3_data: 0
+  skill4_level: 0
+  skill4_data: 0
+  skill5_level: 0
+  skill5_data: 0

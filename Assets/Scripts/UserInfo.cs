@@ -18,6 +18,8 @@ public class UserInfo : MonoBehaviour
     public Text sidestep;
     //道行
     public Text exp;
+    //升级需要道行
+    public Text upexp;
     //修炼速度
     public Text time;
     //修炼进度
@@ -53,17 +55,19 @@ public class UserInfo : MonoBehaviour
     private void flashPage()
     {
         //血量刷新
-        hp.text = player.HP + "";
+        hp.text = player.HP + player.skill2_data + "";
         //攻击刷新
-        aggressivity.text = player.aggressivity + "";
+        aggressivity.text = player.aggressivity + player.skill1_data + "";
         //防御刷新
-        defense.text = player.defense + "";
+        defense.text = player.defense + player.skill3_data + "";
         //暴击刷新
-        crit.text = player.crit + "%";
+        crit.text = player.crit + player.skill4_data + "%";
         //闪避刷新
-        sidestep.text = player.sidestep + "%";
+        sidestep.text = player.sidestep + player.skill5_data + "%";
         //道行刷新
-        exp.text = player.exp + "/" + Math.Pow(player.level, 2) * 2000;
+        exp.text = player.exp + "";
+        //升级需要道行
+        upexp.text = Math.Pow(player.level, 2) * 2000 + "";
         //刷新修炼速度
         time.text = player.time + "秒获取一次道行";
         //刷新修炼进度
@@ -74,15 +78,15 @@ public class UserInfo : MonoBehaviour
     private void UpPlayerInfo()
     {
         //提升血量
-        player.HP += 2000 * player.HP;
+        player.HP += 400 * player.level;
         //提升攻击
-        player.aggressivity += (int)Math.Pow(2 * 100 * player.level, 1 / 2);
+        player.aggressivity += 40 + player.level;
         //防御提升
-        player.defense += 20;
+        player.defense += 5;
         //暴击
-        player.crit += 0.08f;
+        player.crit += 0.1f;
         //闪避
-        player.sidestep += 0.02f;
+        player.sidestep += 0.05f;
         //等级提升
         player.level += 1;
     }
@@ -135,7 +139,7 @@ public class UserInfo : MonoBehaviour
         //1 - 10
         if (player.level < 11)
         {
-            levelname = "练气" + yuShu(player.level);
+            levelname = "练气期" + yuShu(player.level);
         }
         //11 - 20
         if (10 < player.level && player.level < 21)
@@ -183,9 +187,33 @@ public class UserInfo : MonoBehaviour
             levelname = "准圣期" + yuShu(player.level);
         }
         // > 101
-        if (player.level > 100)
+        if (100 < player.level && player.level < 999)
         {
-            levelname = "无限天道期";
+            levelname = "圣玄";
+            //初期
+            if (100 < player.level && player.level < 325)
+            {
+                levelname += "初期";
+            }
+            //中期
+            if (324 < player.level && player.level < 548)
+            {
+                levelname += "中期";
+            }
+            //后期
+            if (547 < player.level && player.level < 774)
+            {
+                levelname += "后期";
+            }
+            //巅峰
+            if (773 < player.level && player.level < 999)
+            {
+                levelname += "巅峰期";
+            }
+        }
+        if (player.level >= 999)
+        {
+            levelname = "无限大道期";
         }
         //赋值
         mainUserLevel.text = levelname;
@@ -195,9 +223,9 @@ public class UserInfo : MonoBehaviour
     //升级
     public void LevelUp()
     {
-        if (player.exp > Math.Pow(player.level, 2) * 2000)
+        if (player.exp > Math.Pow(player.level, 2) * 2000 && player.level < 1000)
         {
-            player.exp -= (int)Math.Pow(player.level, 2) * 2000;
+            player.exp -= (long)Math.Pow(player.level, 2) * 2000;
             UpPlayerInfo();
         }
     }
