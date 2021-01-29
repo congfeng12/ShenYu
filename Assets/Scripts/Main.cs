@@ -83,7 +83,7 @@ public class Main : MonoBehaviour
             //获取奖励
             //人物属性奖励获取
             player.gold += 10000;
-            player.DIA += 500;
+            player.DIA += 1000;
             //道具奖励获取
 
             //更新角色签到奖励日期

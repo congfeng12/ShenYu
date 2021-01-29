@@ -16,11 +16,53 @@ public class BagManage : MonoBehaviour
     public GameObject slotGrid;
     //背包信息
     public Inventory userbag;
+    //物品详情组件
+    public GameObject itemInfoWin;
+    //物品详情标题
+    public Text itemInfoWinTitle;
+    //物品详情图标
+    public Image itemInfoWinImage;
+    //物品详情内容
+    public Text itemInfoWinInfo;
+    //详情页面物品数量
+    public Text itemInfoWinNum;
+    //道具详情页按钮
+    public ItemInfoWinButton itemInfoWinButton;
+    //物品删除按钮
+    //物品使用按钮
+    //音效文件
+    public AudioSource buttonsource;
+    //角色信息
+    public User player;
+    //金币显示组件
+    public Text Goldtext;
+    //钻石显示组件
+    public Text DIAtext;
 
     // Start is called before the first frame update
     public void Start()
     {
+        //初始化金币和钻石显示
+        flashDIA_Glod();
+    }
 
+    public void Update()
+    {
+        //刷新金币和钻石
+        flashDIA_Glod();
+    }
+
+    private void OnEnable()
+    {
+        //刷新背包道具
+        RefrensgItem();
+    }
+
+    //刷新金币和钻石数量
+    private void flashDIA_Glod()
+    {
+        Goldtext.text = player.gold + "";
+        DIAtext.text = player.DIA + "";
     }
 
     //背包创建物品
@@ -46,6 +88,23 @@ public class BagManage : MonoBehaviour
                 break;
         }
         newprop.slotNum.text = item.itemNum.ToString();
+        newprop.button.onClick.AddListener(() => showItemInfo(newprop));
+    }
+
+    //显示物品详情
+    void showItemInfo(Prop prop)
+    {
+        //播放按钮音效
+        buttonsource.Play();
+        //将物品信息放入物品详情窗口
+        itemInfoWinTitle.text = prop.slotItem.itemName;
+        itemInfoWinImage.sprite = prop.slotImage.sprite;
+        itemInfoWinInfo.text = prop.slotItem.itemInfo;
+        itemInfoWinNum.text = prop.slotItem.itemNum + "";
+        //展示页面按钮赋值
+        itemInfoWinButton.shuowitem = prop.slotItem;
+        //显示物品详细窗口
+        itemInfoWin.SetActive(true);
     }
 
     //刷新背包物品
@@ -65,42 +124,5 @@ public class BagManage : MonoBehaviour
             }
         }
 
-    }
-
-    //将物品信息放置在物品详情窗口中
-    public void openSlotInfo(Item item)
-    {
-
-        //    if (bagManage.itemTitle.text != item.itenmname && bagManage.itemTitle.text != "null")
-        //    {
-        //        if (bagManage.iteminfowin.activeSelf == false)
-        //        {
-        //            openItenWindows();
-        //        }
-
-        //        bagManage.itemTitle = ItemLevelmanager.getItemTextLevel(bagManage.itemTitle, item.itemLevel);
-        //        bagManage.itemTitle.text = item.itenmname;
-        //        bagManage.iteminfo.text = item.itemInfor;
-        //        clear_attribute_space();
-        //        add_attributes(item);
-        //    }
-        //    else if (bagManage.itemTitle.text != item.itenmname && bagManage.itemTitle.text == "null")
-        //    {
-        //        Debug.Log(3);
-        //        openItenWindows();
-        //        bagManage.itemTitle = ItemLevelmanager.getItemTextLevel(bagManage.itemTitle, item.itemLevel);
-        //        bagManage.itemTitle.text = item.itenmname;
-        //        bagManage.iteminfo.text = item.itemInfor;
-        //        clear_attribute_space();
-        //        add_attributes(item);
-        //    }
-        //    else
-        //    {
-        //        Debug.Log(4);
-        //        openItenWindows();
-        //    }
-        //    //给详情按钮赋值
-        //    bagManage.itemdelbutton.shuowitem = item;
-        //    bagManage.itemuserbutton.shuowitem = item;
     }
 }

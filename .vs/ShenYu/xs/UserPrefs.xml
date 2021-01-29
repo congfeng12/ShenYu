@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{39C27A90-49FF-AD51-4497-32BCCB06CB7B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BagManage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UserInfo.cs">
     <Files>
-      <File FileName="Assets/Scripts/UserInfo.cs" Line="112" Column="23" />
-      <File FileName="Assets/Scripts/Main.cs" Line="20" Column="24" />
-      <File FileName="Assets/InventoryScripts/User.cs" Line="29" Column="28" />
-      <File FileName="Assets/Scripts/Skills.cs" Line="21" Column="19" />
-      <File FileName="Assets/Scripts/BagManage.cs" Line="65" Column="14" />
-      <File FileName="Assets/Scripts/Prop.cs" Line="11" Column="28" />
-      <File FileName="Assets/InventoryScripts/Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets/InventoryScripts/Item.cs" Line="15" Column="21" />
-      <File FileName="Assets/InventoryScripts/ItemAttribute.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BagProps.cs" Line="21" Column="28" />
+      <File FileName="Assets/Scripts/UserInfo.cs" Line="138" Column="31" />
+      <File FileName="Assets/Scripts/Main.cs" Line="86" Column="32" />
+      <File FileName="Assets/InventoryScripts/User.cs" Line="39" Column="22" />
+      <File FileName="Assets/Scripts/Skills.cs" Line="41" Column="33" />
+      <File FileName="Assets/Scripts/BagManage.cs" Line="100" Column="50" />
+      <File FileName="Assets/Scripts/ItemInfoWinButton.cs" Line="50" Column="21" />
+      <File FileName="Assets/Scripts/UseItemManage.cs" Line="17" Column="5" />
+      <File FileName="Assets/InventoryScripts/Item.cs" Line="27" Column="30" />
+      <File FileName="Assets/InventoryScripts/ItemAttribute.cs" Line="5" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +18,7 @@
             <Node name="Assets" expanded="True">
               <Node name="InventoryScripts" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="BagManage.cs" selected="True" />
+                <Node name="UserInfo.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -29,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d3705afe-0371-4835-894c-4f457be4be42" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9f0749ef-0903-4281-9396-2f5f41728730" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

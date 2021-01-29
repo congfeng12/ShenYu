@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.8.4.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.13f1c1</UnityVersion>
@@ -68,11 +69,12 @@
     <Compile Include="Assets\InventoryScripts\ItemAttribute.cs" />
     <Compile Include="Assets\InventoryScripts\User.cs" />
     <Compile Include="Assets\Scripts\BagManage.cs" />
-    <Compile Include="Assets\Scripts\BagProps.cs" />
+    <Compile Include="Assets\Scripts\ItemInfoWinButton.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Prop.cs" />
     <Compile Include="Assets\Scripts\Skills.cs" />
+    <Compile Include="Assets\Scripts\UseItemManage.cs" />
     <Compile Include="Assets\Scripts\UserInfo.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Volumes/CMAPLE_HD/Unity3D/unity/2019.4.13f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

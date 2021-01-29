@@ -13,4 +13,6 @@ public class Prop : MonoBehaviour
     public Image backImage;
     //物品数量
     public Text slotNum;
+    //按钮
+    public Button button;
 }
