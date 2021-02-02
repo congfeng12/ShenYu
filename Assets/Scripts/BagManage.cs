@@ -92,7 +92,7 @@ public class BagManage : MonoBehaviour
     }
 
     //显示物品详情
-    void showItemInfo(Prop prop)
+    private void showItemInfo(Prop prop)
     {
         //播放按钮音效
         buttonsource.Play();
@@ -124,5 +124,24 @@ public class BagManage : MonoBehaviour
             }
         }
 
+    }
+
+    //道具增加到背包
+    public void addItemToPlayerBag(Inventory userbag, Item thisitem, int num)
+    {
+        if (!userbag.list.Contains(thisitem))
+        {
+            userbag.list.Add(thisitem);
+            if (num > 1)
+            {
+                thisitem.itemNum += num - 1;
+            }
+
+        }
+        else
+        {
+            thisitem.itemNum += num;
+        }
+        RefrensgItem();
     }
 }

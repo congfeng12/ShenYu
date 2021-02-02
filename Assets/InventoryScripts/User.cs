@@ -25,6 +25,12 @@ public class User : ScriptableObject
     public long DIA;
     //金币数量
     public long gold;
+    //体力
+    public int power;
+    //纠缠星辰
+    public int stars;
+    //扫荡币
+    public int vouchers;
     //技能点数
     public long skillPoints;
     //修炼速度
@@ -35,14 +41,20 @@ public class User : ScriptableObject
     public string lasttime;
     //每日签到确认日期
     public string signTime;
-    //妖魂
-    public Item equip;
+    //妖魂图片
+    public Sprite eqItem;
+    //属性编号 1-攻击；2-生命；3-防御；4-暴击；5-闪避
+    public int eq_aggressivity;
+    public int eq_HP;
+    public int eq_defense;
+    public float eq_crit;
+    public float eq_sidestep;
     //玄云决使用次数限制（100008）
-    public int xy_Limit_Num = 10;
+    public int xy_Limit_Num = 6;
     //玄云决使用次数（100008）
     public int xy_Num;
     //青云密典使用次数限制（100009）
-    public int qy_Limit_Num = 10;
+    public int qy_Limit_Num = 6;
     //青云密典使用次数（100009）
     public int qy_Num;
     //攻击技能等级

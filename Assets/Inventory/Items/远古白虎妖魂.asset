@@ -19,5 +19,7 @@ MonoBehaviour:
   itemLevel: 4
   isStack: 0
   itemNum: 1
-  itemInfo: "\u8FDC\u53E4\u767D\u864E\u51DD\u805A\u7684\u5996\u9B42\uFF0C\u653B\u51FB+20%\uFF1B\u4FEE\u70BC\u8FDB\u5EA6+20%"
-  itemAttribute: []
+  itemInfo: "\u8FDC\u53E4\u767D\u864E\u51DD\u805A\u7684\u5996\u9B42\uFF0C\u653B\u51FB+200\uFF1B\u66B4\u51FB+20%"
+  itemAttribute:
+  - {fileID: 11400000, guid: a3f5b7f6f1ebe4d0c9f69250a9e97025, type: 2}
+  - {fileID: 11400000, guid: 3384d7e33de504f72bc2e6f9cc00c56f, type: 2}

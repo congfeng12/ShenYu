@@ -67,6 +67,7 @@
     <Compile Include="Assets\InventoryScripts\Inventory.cs" />
     <Compile Include="Assets\InventoryScripts\Item.cs" />
     <Compile Include="Assets\InventoryScripts\ItemAttribute.cs" />
+    <Compile Include="Assets\InventoryScripts\Shop.cs" />
     <Compile Include="Assets\InventoryScripts\User.cs" />
     <Compile Include="Assets\Scripts\BagManage.cs" />
     <Compile Include="Assets\Scripts\ItemInfoWinButton.cs" />

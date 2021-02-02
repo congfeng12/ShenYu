@@ -19,5 +19,6 @@ MonoBehaviour:
   itemLevel: 1
   isStack: 1
   itemNum: 1
-  itemInfo: "\u521D\u7EA7\u9053\u884C\u4E66\uFF0C\u53EF\u4EE5\u589E\u52A0100\u9053\u884C"
-  itemAttribute: []
+  itemInfo: "\u521D\u7EA7\u9053\u884C\u4E66\uFF0C\u53EF\u4EE5\u589E\u52A01000\u9053\u884C"
+  itemAttribute:
+  - {fileID: 11400000, guid: fb2755ff5a56c4afca1142d767c8d50b, type: 2}

@@ -20,4 +20,5 @@ MonoBehaviour:
   isStack: 0
   itemNum: 1
   itemInfo: "\u4ED9\u5BB6\u7ED8\u5236\u7684\u7B26\u7B93\uFF0C\u6709\u7C7B\u4F3C\u5996\u9B42\u7684\u6548\u679C\u3002\u653B\u51FB+10"
-  itemAttribute: []
+  itemAttribute:
+  - {fileID: 11400000, guid: 32cdb98a3ef304e45803ba518dfa195c, type: 2}

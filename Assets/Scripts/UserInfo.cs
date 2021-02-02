@@ -24,12 +24,18 @@ public class UserInfo : MonoBehaviour
     public Text time;
     //修炼进度
     public Text practiceExp;
+    //体力
+    public Text power;
+    //扫荡币
+    public Text vouchers;
     //主页角色等级
     public Text mainUserLevel;
     //角色页面等级
     public Text userPageUserLevel;
     //角色信息
     public User player;
+    //页面展示妖魂模块
+    public Image eqsprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,15 +61,15 @@ public class UserInfo : MonoBehaviour
     private void flashPage()
     {
         //血量刷新
-        hp.text = player.HP + player.skill2_data + "";
+        hp.text = player.HP + player.skill2_data + player.eq_HP + "";
         //攻击刷新
-        aggressivity.text = player.aggressivity + player.skill1_data + "";
+        aggressivity.text = player.aggressivity + player.skill1_data + player.eq_aggressivity + "";
         //防御刷新
-        defense.text = player.defense + player.skill3_data + "";
+        defense.text = player.defense + player.skill3_data + player.eq_defense + "";
         //暴击刷新
-        crit.text = player.crit + player.skill4_data + "%";
+        crit.text = player.crit + player.skill4_data + player.eq_crit + "%";
         //闪避刷新
-        sidestep.text = player.sidestep + player.skill5_data + "%";
+        sidestep.text = player.sidestep + player.skill5_data + player.eq_sidestep + "%";
         //道行刷新
         exp.text = player.exp + "";
         //升级需要道行
@@ -72,6 +78,16 @@ public class UserInfo : MonoBehaviour
         time.text = player.time + "秒获取一次道行";
         //刷新修炼进度
         practiceExp.text = player.practiceExp + "道行/每次";
+        //刷新体力
+        power.text = player.power + "";
+        //刷新扫荡币
+        vouchers.text = player.vouchers + "";
+        //刷新妖魂图片
+        if (null != player.eqItem)
+        {
+            eqsprite.sprite = player.eqItem;
+        }
+
     }
 
     //人数属性提升

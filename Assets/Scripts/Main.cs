@@ -56,6 +56,8 @@ public class Main : MonoBehaviour
         Practice();
         //更新角色中文等级
         userInfo.getLevelName();
+        //刷新时间更新
+        waitTime = player.time;
     }
 
     //计算每日签到
@@ -84,8 +86,7 @@ public class Main : MonoBehaviour
             //人物属性奖励获取
             player.gold += 10000;
             player.DIA += 1000;
-            //道具奖励获取
-
+            player.power += 100;
             //更新角色签到奖励日期
             player.signTime = year + "-" + month + "-" + day;
         }
