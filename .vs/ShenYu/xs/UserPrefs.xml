@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{39C27A90-49FF-AD51-4497-32BCCB06CB7B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UseItemManage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemInfoWinButton.cs">
     <Files>
-      <File FileName="Assets/Scripts/UserInfo.cs" Line="103" Column="23" />
-      <File FileName="Assets/Scripts/Main.cs" Line="24" Column="33" />
-      <File FileName="Assets/InventoryScripts/User.cs" Line="33" Column="24" />
-      <File FileName="Assets/Scripts/Skills.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BagManage.cs" Line="130" Column="35" />
-      <File FileName="Assets/Scripts/UseItemManage.cs" Line="124" Column="21" />
-      <File FileName="Assets/Scripts/ItemInfoWinButton.cs" Line="41" Column="34" />
+      <File FileName="Assets/Scripts/Main.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Fight.cs" Line="110" Column="14" />
+      <File FileName="Assets/Scripts/BagManage.cs" Line="108" Column="6" />
+      <File FileName="Assets/InventoryScripts/User.cs" Line="30" Column="11" />
+      <File FileName="Assets/Scripts/UserInfo.cs" Line="242" Column="30" />
+      <File FileName="Assets/Scripts/ItemInfoWinButton.cs" Line="40" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +15,7 @@
             <Node name="Assets" expanded="True">
               <Node name="InventoryScripts" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="UseItemManage.cs" selected="True" />
+                <Node name="ItemInfoWinButton.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -26,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="781e57ae-0afc-464f-80cd-5a63b108e331" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bf44fe27-6fde-442d-8435-900e40bc0c24" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

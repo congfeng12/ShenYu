@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   level: 1
-  exp: 3083000
+  exp: 4540000
   aggressivity: 200
   HP: 5000
   defense: 20
   crit: 5
   sidestep: 2
-  DIA: 1000
-  gold: 10000
-  power: 1420
+  DIA: 0
+  gold: 0
+  power: 90000
   stars: 0
-  vouchers: 0
-  skillPoints: 100
+  vouchers: 200
+  skillPoints: 0
   time: 60
   practiceExp: 500
-  lasttime: 2/2/2021 4:24:02 PM
-  signTime: 2021-2-2
+  lasttime: 2/4/2021 5:13:11 PM
+  signTime: 2021-2-4
   eqItem: {fileID: 0}
   eq_aggressivity: 0
   eq_HP: 0

@@ -70,6 +70,7 @@
     <Compile Include="Assets\InventoryScripts\Shop.cs" />
     <Compile Include="Assets\InventoryScripts\User.cs" />
     <Compile Include="Assets\Scripts\BagManage.cs" />
+    <Compile Include="Assets\Scripts\Fight.cs" />
     <Compile Include="Assets\Scripts\ItemInfoWinButton.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />

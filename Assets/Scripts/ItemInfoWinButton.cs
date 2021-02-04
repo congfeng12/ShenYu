@@ -31,8 +31,6 @@ public class ItemInfoWinButton : MonoBehaviour
                     userbag.list.Remove(userbag.list[i]);
                 }
             }
-            //防止背包总数量减少增加一个空位置
-            userbag.list.Add(null);
             //当该物品从背包移除则需要将详情页面关闭
             bagManage.itemInfoWin.SetActive(false);
         }
