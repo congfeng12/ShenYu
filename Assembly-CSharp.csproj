@@ -74,6 +74,8 @@
     <Compile Include="Assets\Scripts\ItemInfoWinButton.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\PrizeManage.cs" />
+    <Compile Include="Assets\Scripts\PrizeProp.cs" />
     <Compile Include="Assets\Scripts\Prop.cs" />
     <Compile Include="Assets\Scripts\ShopManage.cs" />
     <Compile Include="Assets\Scripts\ShopProp.cs" />
