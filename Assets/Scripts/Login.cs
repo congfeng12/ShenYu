@@ -8,7 +8,7 @@ public class Login : MonoBehaviour
     void Start()
     {
         //设置固定分辨率 60HZ 720*1280分辨率
-        Screen.SetResolution(1280, 720, true, 60);
+        Screen.SetResolution(720, 1280, true);
         //读取存档
     }
 
@@ -29,7 +29,6 @@ public class Login : MonoBehaviour
     }
     //退出游戏
     public void QuitGame() {
-        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
     //读取存档

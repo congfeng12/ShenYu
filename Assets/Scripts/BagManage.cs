@@ -28,8 +28,8 @@ public class BagManage : MonoBehaviour
     public Text itemInfoWinNum;
     //道具详情页按钮
     public ItemInfoWinButton itemInfoWinButton;
-    //物品删除按钮
-    //物品使用按钮
+    //保存游戏
+    public SaveGame savegame;
     //音效文件
     public AudioSource buttonsource;
     //角色信息
@@ -143,5 +143,7 @@ public class BagManage : MonoBehaviour
             thisitem.itemNum += num;
         }
         //RefrensgItem();
+        //保存游戏
+        savegame.save();
     }
 }

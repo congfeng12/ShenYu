@@ -24,6 +24,8 @@ public class Main : MonoBehaviour
     public Text practiceExpText;
     //用户信息页面
     public UserInfo userInfo;
+    //保存游戏
+    public SaveGame savegame;
     //--------修炼技能刷新属性-----------
     //进度条图
     public Image cooldown;
@@ -35,6 +37,7 @@ public class Main : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        savegame.beginGame();
         //初始化用户信息
         waitTime = player.time;
         //页面信息更新
@@ -66,7 +69,8 @@ public class Main : MonoBehaviour
         //计算挂机时间差
         TimeSpan interval = DateTime.Now - Convert.ToDateTime(player.lasttime);
         int unOlineTime = (int)((int)interval.TotalSeconds / player.time);
-        if (unOlineTime > 1) {
+        if (unOlineTime > 1)
+        {
             //增加离线挂机道行
             player.exp += unOlineTime * player.practiceExp;
         }
@@ -95,7 +99,7 @@ public class Main : MonoBehaviour
             //如果已经领取奖励则直接隐藏每日奖励窗口
             qindao.SetActive(false);
         }
-
+        savegame.save();
     }
 
     //修炼
@@ -118,6 +122,8 @@ public class Main : MonoBehaviour
                 player.exp += player.practiceExp;
                 //更新最后修炼时间点
                 player.lasttime = DateTime.Now.ToString();
+                //保存游戏
+                savegame.save();
             }
         }
     }

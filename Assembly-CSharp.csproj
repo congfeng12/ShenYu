@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\PrizeManage.cs" />
     <Compile Include="Assets\Scripts\PrizeProp.cs" />
     <Compile Include="Assets\Scripts\Prop.cs" />
+    <Compile Include="Assets\Scripts\SaveGame.cs" />
     <Compile Include="Assets\Scripts\ShopManage.cs" />
     <Compile Include="Assets\Scripts\ShopProp.cs" />
     <Compile Include="Assets\Scripts\Skills.cs" />

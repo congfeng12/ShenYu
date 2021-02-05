@@ -22,13 +22,13 @@ MonoBehaviour:
   DIA: 0
   gold: 0
   power: 0
-  stars: 1000
+  stars: 0
   vouchers: 0
   skillPoints: 0
   time: 60
   practiceExp: 500
-  lasttime: 2/5/2021 2:28:04 PM
-  signTime: 2021-2-5
+  lasttime: 2/5/2021 4:31:54 PM
+  signTime: 1999-1-1
   eqItem: {fileID: 0}
   eq_aggressivity: 0
   eq_HP: 0
