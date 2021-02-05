@@ -88,6 +88,7 @@ public class BagManage : MonoBehaviour
                 break;
         }
         newprop.slotNum.text = item.itemNum.ToString();
+        newprop.button.onClick.RemoveAllListeners();
         newprop.button.onClick.AddListener(() => showItemInfo(newprop));
     }
 
@@ -136,12 +137,11 @@ public class BagManage : MonoBehaviour
             {
                 thisitem.itemNum += num - 1;
             }
-
         }
         else
         {
             thisitem.itemNum += num;
         }
-        RefrensgItem();
+        //RefrensgItem();
     }
 }

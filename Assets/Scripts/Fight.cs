@@ -50,7 +50,7 @@ public class Fight : MonoBehaviour
     //获取金币钻石的战斗
     public void startFight_1()
     {
-        if (10 < player.power)
+        if (10 <= player.power)
         {
             //金币钻石奖励
             fightwin.SetActive(true);
@@ -64,7 +64,7 @@ public class Fight : MonoBehaviour
     //获取技能点的战斗
     public void startFight_2()
     {
-        if (10 < player.power)
+        if (10 <= player.power)
         {
             //精粹石等奖励
             fightwin.SetActive(true);

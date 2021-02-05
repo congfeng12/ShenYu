@@ -75,6 +75,8 @@
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Prop.cs" />
+    <Compile Include="Assets\Scripts\ShopManage.cs" />
+    <Compile Include="Assets\Scripts\ShopProp.cs" />
     <Compile Include="Assets\Scripts\Skills.cs" />
     <Compile Include="Assets\Scripts\UseItemManage.cs" />
     <Compile Include="Assets\Scripts\UserInfo.cs" />
